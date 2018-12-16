@@ -1,0 +1,60 @@
+{
+  "name": "demo2",
+  "description": "application created by thinkjs",
+  "version": "1.0.0",
+  "author": "wuzipei",
+  "scripts": {
+    "start": "node development.js",
+    "test": "THINK_UNIT_TEST=1 nyc ava test/ && nyc report --reporter=html",
+    "compile": "babel --no-babelrc src/ --presets think-node --out-dir app/",
+    "lint": "eslint src/",
+    "lint-fix": "eslint --fix src/"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "ioredis": "^4.2.0",
+    "jsonwebtoken": "^8.4.0",
+    "koa-cors": "0.0.16",
+    "think-cache": "^1.0.0",
+    "think-cache-file": "^1.0.8",
+    "think-logger3": "^1.0.0",
+    "think-model": "^1.0.0",
+    "think-model-mysql": "^1.0.0",
+    "think-mongo": "^1.0.9",
+    "think-session": "^1.0.0",
+    "think-session-file": "^1.0.5",
+    "think-view": "^1.0.0",
+    "think-view-nunjucks": "^1.0.1",
+    "thinkjs": "^3.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-think-node": "^1.0.0",
+    "node-notifier": "^5.0.2",
+    "think-inspect": "0.0.2",
+    "think-babel": "^1.0.3",
+    "think-watcher": "^3.0.0",
+    "eslint": "^4.2.0",
+    "eslint-config-think": "^1.0.0",
+    "ava": "^0.18.0",
+    "nyc": "^7.0.0"
+  },
+  "repository": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "readmeFilename": "README.md",
+  "thinkjs": {
+    "metadata": {
+      "name": "demo2",
+      "description": "application created by thinkjs",
+      "author": "wuzipei",
+      "babel": true
+    },
+    "projectName": "demo2",
+    "template": "F:\\nodejs\\node_modules\\think-cli\\default_template",
+    "clone": false,
+    "isMultiModule": false
+  }
+}
